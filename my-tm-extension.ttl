@@ -1,12 +1,21 @@
-@prefix : <http://example.org/tm#> .
-@prefix dct: <http://purl.org/dc/terms/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix org: <http://www.w3.org/ns/org#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix frac: <http://www.w3.org/ns/lemon/frac#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix bn: <http://babelnet.org/rdf/synset/> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix ocd: <http://dati.camera.it/ocd/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix tm: <http://example.org/tm/> .
 @prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
+@prefix liita: <http://liita.it/data/id/lemma/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix frac: <http://www.w3.org/ns/lemon/frac#> .
+@prefix nif: <http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#> .
+
 
 @base <http://example.org/tm#> .
 
@@ -169,7 +178,7 @@ with specific parameters, corpus, and versions.
 
 :Document
     rdf:type owl:Class ;
-    rdfs:subClassOf rdfs:Resource ;
+    rdfs:subClassOf nif:String ;
     rdfs:label "Document"@en ;
     rdfs:comment """
 A textual document or document segment
@@ -184,3 +193,4 @@ rdfs:Container rdf:type owl:Class .
 frac:Observable rdf:type owl:Class .
 frac:Observation rdf:type owl:Class .
 prov:Activity rdf:type owl:Class .
+
