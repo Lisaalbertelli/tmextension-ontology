@@ -1,6 +1,6 @@
 This repository contains:
 
-- Code to run BERTopic-based Dynamic Topic Modeling on the ItaParlCorpus
+- Code to run BERTopic-based Dynamic Topic Modeling (Grootendorst, 2022) on the ItaParlCorpus (Cova, 2025)
  - An ontology to represent extracted topics as structured data
 - A .ttl file with RDF triples built using the ontology and standard vocabularies (in particular the Ontolex-Lemon in its core module and its FrAC (Frequency, Attestation and Corpus-based Information) extension.
 
